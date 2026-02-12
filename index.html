@@ -1,34 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ricky D'Souza - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirudha Karande - Robotics Engineer</title>
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        header, footer {
             text-align: center;
-            background-color: #f4f4f4;
+            margin-bottom: 30px;
         }
-        .container {
-            margin-top: 100px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-        a {
-            color: blue;
+        nav a {
+            margin: 0 12px;
             text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        h1, h2, h3 {
+            color: #222;
+        }
+        .section {
+            margin-bottom: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Hi, I'm Ricky 👋</h1>
-        <p>Robotics & AI Enthusiast</p>
-        <p>I work on Computer Vision, 6D Pose Estimation, and Industrial Automation.</p>
-        <a href="https://github.com/yourusername">My GitHub</a>
-    </div>
+
+    <header>
+        <h1>Anirudha Karande</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2>About Me</h2>
+        <p>
+            I'm currently a Research engineer at the Automotive Research Association of India (ARAI), a premium research institute under the central government of India.
+            I work on Camera testing for ADAS and Camera Monitoring Systems (CMS). I am passionate about bridging the gap between human adaptability and robotic precision.
+        </p>
+    </section>
+
+    <section id="vision" class="section">
+        <h2>Vision</h2>
+        <p>
+            Working towards a future where manufacturing robots can adapt to diverse tasks with human-like flexibility,
+            from precise electronics assembly to dynamic object manipulation.
+        </p>
+    </section>
+
+    <section id="expertise" class="section">
+        <h2>Expertise</h2>
+        <p>
+            Specialized in robotics perception, manipulation systems, and industrial automation,
+            with success in developing solutions for complex manufacturing challenges.
+        </p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Selected Projects</h2>
+
+        <h3>Steering Torque Test System</h3>
+        <p>
+            Engineered an AC servo motor control system with <strong>PID control</strong> using STM32, achieving <0.1° accuracy.
+        </p>
+
+        <h3>Camera Monitoring System / Image Quality Testing</h3>
+        <p>
+            Built a high-precision vision system for compliance testing with modern standards.
+        </p>
+
+        <h3>Autonomous Robot Manipulator</h3>
+        <p>
+            Developed a manipulation system with YOLOv4 + point cloud processing and task planning, ranking 5th globally.
+        </p>
+
+        <h3>Industrial Vision System</h3>
+        <p>
+            Architected a ROS2 + RealSense vision pipeline for industrial pick tasks with high accuracy.
+        </p>
+
+        <h3>Machining Cost Estimation using AI</h3>
+        <p>
+            Led an AI pipeline for machining cost prediction combining SSD and data-driven models.
+        </p>
+    </section>
+
+    <footer>
+        <hr>
+        <p>© 2025 Anirudha Karande</p>
+        <p>Email · LinkedIn</p>
+    </footer>
+
 </body>
 </html>

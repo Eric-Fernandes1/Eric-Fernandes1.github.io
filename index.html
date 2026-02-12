@@ -1,104 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anirudha Karande - Robotics Engineer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: auto;
-            padding: 40px;
-            line-height: 1.6;
-        }
-        header, footer {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        nav a {
-            margin: 0 12px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        h1, h2, h3 {
-            color: #222;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eric Fernandes | Robotics Engineer</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #0f172a;
+        color: #e2e8f0;
+        line-height: 1.6;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #1e293b, #0f172a);
+    }
+
+    header h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 18px;
+        color: #94a3b8;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav a {
+        color: #38bdf8;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #38bdf8;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        background: #1e293b;
+        padding: 25px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        background: #243447;
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #38bdf8;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #cbd5e1;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        background-color: #1e293b;
+        margin-top: 40px;
+        color: #94a3b8;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 8px 15px;
+        background-color: #38bdf8;
+        color: #0f172a;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .btn:hover {
+        background-color: #0ea5e9;
+    }
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Anirudha Karande</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
-        </nav>
-    </header>
+<header>
+    <h1>Eric Fernandes</h1>
+    <p>Robotics | Computer Vision | Industrial Automation</p>
 
-    <section id="home" class="section">
-        <h2>About Me</h2>
-        <p>
-            I'm currently a Research engineer at the Automotive Research Association of India (ARAI), a premium research institute under the central government of India.
-            I work on Camera testing for ADAS and Camera Monitoring Systems (CMS). I am passionate about bridging the gap between human adaptability and robotic precision.
-        </p>
-    </section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <section id="vision" class="section">
-        <h2>Vision</h2>
-        <p>
-            Working towards a future where manufacturing robots can adapt to diverse tasks with human-like flexibility,
-            from precise electronics assembly to dynamic object manipulation.
-        </p>
-    </section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Robotics and AI enthusiast focused on 6D pose estimation, robot manipulation,
+        and industrial automation systems. I enjoy building perception-driven robotic systems
+        using ROS2, OpenCV, and deep learning.
+    </p>
+</section>
 
-    <section id="expertise" class="section">
-        <h2>Expertise</h2>
-        <p>
-            Specialized in robotics perception, manipulation systems, and industrial automation,
-            with success in developing solutions for complex manufacturing challenges.
-        </p>
-    </section>
+<section id="projects">
+    <h2>Projects</h2>
 
-    <section id="projects" class="section">
-        <h2>Selected Projects</h2>
+    <div class="card-container">
 
-        <h3>Steering Torque Test System</h3>
-        <p>
-            Engineered an AC servo motor control system with <strong>PID control</strong> using STM32, achieving <0.1° accuracy.
-        </p>
+        <div class="card">
+            <h3>6D Pose Estimation System</h3>
+            <p>
+                Developed a real-time object pose estimation system using RealSense camera,
+                YOLO detection, and custom PnP solver integrated with ABB robot.
+            </p>
+            <a href="#" class="btn">View Project</a>
+        </div>
 
-        <h3>Camera Monitoring System / Image Quality Testing</h3>
-        <p>
-            Built a high-precision vision system for compliance testing with modern standards.
-        </p>
+        <div class="card">
+            <h3>ABB Robot Control via OPC UA</h3>
+            <p>
+                Implemented industrial robot control using ROS2 and OPC UA gateway
+                without EGM for secure communication.
+            </p>
+            <a href="#" class="btn">View Project</a>
+        </div>
 
-        <h3>Autonomous Robot Manipulator</h3>
-        <p>
-            Developed a manipulation system with YOLOv4 + point cloud processing and task planning, ranking 5th globally.
-        </p>
+        <div class="card">
+            <h3>YOLO + ArUco Vision System</h3>
+            <p>
+                Combined deep learning detection with ArUco pose estimation
+                for accurate robotic pick-and-place operations.
+            </p>
+            <a href="#" class="btn">View Project</a>
+        </div>
 
-        <h3>Industrial Vision System</h3>
-        <p>
-            Architected a ROS2 + RealSense vision pipeline for industrial pick tasks with high accuracy.
-        </p>
+    </div>
+</section>
 
-        <h3>Machining Cost Estimation using AI</h3>
-        <p>
-            Led an AI pipeline for machining cost prediction combining SSD and data-driven models.
-        </p>
-    </section>
+<section id="competitions">
+    <h2>Competitions</h2>
 
-    <footer>
-        <hr>
-        <p>© 2025 Anirudha Karande</p>
-        <p>Email · LinkedIn</p>
-    </footer>
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Robotics Challenge 2024</h3>
+            <p>
+                Designed and programmed an autonomous manipulation system
+                achieving top performance in perception accuracy.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AI Innovation Hackathon</h3>
+            <p>
+                Built an AI-based cost estimation model for manufacturing processes
+                using computer vision and regression techniques.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>GitHub: https://github.com/yourusername</p>
+    <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
+</section>
+
+<footer>
+    © 2026 Eric Fernandes | Built with GitHub Pages
+</footer>
 
 </body>
 </html>

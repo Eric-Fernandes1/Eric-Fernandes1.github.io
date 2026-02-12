@@ -54,6 +54,7 @@
     }
 
     .project h2 {
+        text-align: center;
         color: #38bdf8;
         margin-bottom: 15px;
     }
@@ -68,15 +69,17 @@
 
     .media-row {
         display: flex;
-        gap: 20px;
+        justify-content: center;   /* centers horizontally */
+        align-items: center;
+        gap: 30px;
         margin: 20px 0;
-        flex-wrap: wrap;
     }
 
     .media-row img,
     .media-row video {
-        width: 320px;
-        border-radius: 8px;
+        width: 45%;
+        max-width: 600px;
+        border-radius: 12px;
     }
 
     ul {

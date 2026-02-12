@@ -24,39 +24,68 @@
         margin-bottom: 10px;
     }
 
-    a {
+    header a {
         color: #38bdf8;
         text-decoration: none;
         font-weight: bold;
     }
 
     section {
-        max-width: 1000px;
+        max-width: 1100px;
         margin: auto;
         padding: 40px 20px;
     }
 
     .project {
         background: #1e293b;
-        padding: 25px;
-        margin-bottom: 25px;
+        padding: 30px;
+        margin-bottom: 40px;
         border-radius: 10px;
     }
 
     .project h2 {
         color: #38bdf8;
+        margin-bottom: 15px;
     }
 
-    .back {
+    .media-row {
+        display: flex;
+        gap: 20px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .media-row img,
+    .media-row video {
+        width: 320px;
+        border-radius: 8px;
+    }
+
+    .project p {
+        margin-top: 15px;
+        line-height: 1.6;
+        color: #cbd5e1;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        background-color: #1e293b;
+        color: #94a3b8;
+    }
+
+    .back-btn {
         display: inline-block;
-        margin-top: 20px;
+        margin-top: 10px;
         padding: 8px 15px;
         background-color: #38bdf8;
         color: #0f172a;
         border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
     }
 
-    .back:hover {
+    .back-btn:hover {
         background-color: #0ea5e9;
     }
 </style>
@@ -66,45 +95,96 @@
 
 <header>
     <h1>All Projects</h1>
-    <p><a href="index.html">← Back to Home</a></p>
+    <a href="index.html" class="back-btn">← Back to Home</a>
 </header>
 
 <section>
 
+    <!-- Project 1 -->
     <div class="project">
         <h2>6D Pose Estimation System</h2>
+
+        <div class="media-row">
+            <img src="Aruco Marker Detection .jpg" alt="6D Pose Estimation">
+            
+            <video controls>
+                <source src="Vision_Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
         <p>
-            Real-time object pose estimation using Intel RealSense camera,
-            YOLO detection, and custom PnP solver. Integrated with ABB robot
-            for automated pick-and-place tasks.
+            Developed a real-time 6D pose estimation pipeline using Intel RealSense camera,
+            YOLO-based detection, and a custom PnP solver. The system was integrated with
+            an ABB industrial robot for autonomous pick-and-place operations.
         </p>
     </div>
 
+
+    <!-- Project 2 -->
     <div class="project">
         <h2>ABB Robot Control via OPC UA</h2>
+
+        <div class="media-row">
+            <img src="abb.jpg" alt="ABB Robot Control">
+            
+            <video controls>
+                <source src="abb-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+
         <p>
-            Industrial robot control architecture using ROS2 and OPC UA gateway
-            without using EGM. Designed for safe industrial communication.
+            Designed and implemented industrial robot control architecture using ROS2
+            and OPC UA gateway without using EGM. Ensured reliable and secure communication
+            between robot, PLC, and vision system.
         </p>
     </div>
 
+
+    <!-- Project 3 -->
     <div class="project">
         <h2>YOLO + ArUco Pose Pipeline</h2>
+
+        <div class="media-row">
+            <img src="aruco.jpg" alt="YOLO ArUco System">
+            
+            <video controls>
+                <source src="aruco-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+
         <p>
-            Combined deep learning detection with ArUco-based pose refinement
-            for high-accuracy robotic manipulation.
+            Combined deep learning object detection with ArUco-based pose refinement
+            to improve accuracy in robotic manipulation tasks. Implemented coordinate
+            transformation pipeline from camera frame to robot base frame.
         </p>
     </div>
 
+
+    <!-- Project 4 -->
     <div class="project">
         <h2>Bin Picking Simulation (Simulink)</h2>
+
+        <div class="media-row">
+            <img src="simulink.jpg" alt="Bin Picking Simulation">
+            
+            <video controls>
+                <source src="simulink-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+
         <p>
-            Built perception + planning pipeline in MATLAB/Simulink including
-            deep learning based object pose estimation.
+            Developed a perception-control-planning pipeline in MATLAB/Simulink
+            including deep learning-based object pose estimation integrated with
+            motion planning algorithms.
         </p>
     </div>
 
 </section>
+
+<footer>
+    © 2026 Eric Fernandes | Robotics Portfolio
+</footer>
 
 </body>
 </html>

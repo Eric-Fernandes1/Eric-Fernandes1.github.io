@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Projects | Eric Fernandes</title>
+
+<style>
+    body {
+        background-color: #0f172a;
+        color: #e2e8f0;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px;
+        background: #1e293b;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #38bdf8;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    section {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    .project {
+        background: #1e293b;
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+    }
+
+    .project h2 {
+        color: #38bdf8;
+    }
+
+    .back {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 15px;
+        background-color: #38bdf8;
+        color: #0f172a;
+        border-radius: 5px;
+    }
+
+    .back:hover {
+        background-color: #0ea5e9;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>All Projects</h1>
+    <p><a href="index.html">← Back to Home</a></p>
+</header>
+
+<section>
+
+    <div class="project">
+        <h2>6D Pose Estimation System</h2>
+        <p>
+            Real-time object pose estimation using Intel RealSense camera,
+            YOLO detection, and custom PnP solver. Integrated with ABB robot
+            for automated pick-and-place tasks.
+        </p>
+    </div>
+
+    <div class="project">
+        <h2>ABB Robot Control via OPC UA</h2>
+        <p>
+            Industrial robot control architecture using ROS2 and OPC UA gateway
+            without using EGM. Designed for safe industrial communication.
+        </p>
+    </div>
+
+    <div class="project">
+        <h2>YOLO + ArUco Pose Pipeline</h2>
+        <p>
+            Combined deep learning detection with ArUco-based pose refinement
+            for high-accuracy robotic manipulation.
+        </p>
+    </div>
+
+    <div class="project">
+        <h2>Bin Picking Simulation (Simulink)</h2>
+        <p>
+            Built perception + planning pipeline in MATLAB/Simulink including
+            deep learning based object pose estimation.
+        </p>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -73,7 +73,7 @@
         align-items: center;
         gap: 40px;
         margin: 30px 0;
-       
+        flex-wrap: wrap;
     }
 
     .media-row img,
@@ -113,22 +113,22 @@
 
 <section>
 
-    <!-- Project 1 -->
+    <!-- 6D Pose Estimation Project -->
     <div class="project">
         <h2>6D Pose Estimation System</h2>
 
         <h3 class="subheading">Challenge</h3>
         <p>
-            Enable real-time 6D object pose estimation for variable orientations 
-            and integrate it with an ABB manipulator for adaptive pick-and-place 
+            Enable real-time 6D object pose estimation for variable orientations and 
+            integrate it with an ABB manipulator for adaptive pick-and-place 
             without fixed waypoint programming.
         </p>
 
         <div class="media-row">
             <img src="Aruco Marker Detection .jpg" alt="6D Pose Estimation">
+            
             <video controls>
                 <source src="Vision_Video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
             </video>
         </div>
 
@@ -136,10 +136,10 @@
         <ul>
             <li>Utilized Intel RealSense RGB-D camera for synchronized real-time 3D perception.</li>
             <li>Implemented YOLO detection with custom PnP solver for accurate 6D pose estimation.</li>
-            <li>Performed hand–eye calibration to transform camera coordinates into robot base frame.</li>
+            <li>Performed hand–eye calibration to transform camera coordinates into robot base frame</li>
             <li>Developed Python trajectory generation with ABB RAPID socket-based robot communication.</li>
             <li>Achieved sub-centimeter pose estimation accuracy across repeated operational cycles.</li>
-            <li>Eliminated manual robot re-teaching across multiple production cycles.</li>
+            <li>Eliminated manual robot re-teaching across multiple production cycles</li>
         </ul>
     </div>
 
@@ -161,10 +161,10 @@
 
         <h3 class="subheading">Technologies & Impact</h3>
         <ul>
-            <li>Utilized computer vision for object detection and classification across multiple attributes.</li>
+            <li>Utilized computer vision for object detection and classification across multiple attributes</li>
             <li>Integrated Dobot MG400 robot using Modbus communication for real-time control.</li>
             <li>Developed control logic supporting operation via Python, Lua, or MATLAB environments.</li>
-            <li>Implemented multi-criteria sorting for metal, non-metal, color, and geometric shape categories.</li>
+            <li>Implemented multi-criteria sorting for metal, non-metal, color, and geometric shape categories</li>
             <li>Reduced manual sorting effort and improved repeatability across continuous cycles.</li>
             <li>Created a modular sorting cell adaptable to different industrial classification tasks.</li>
         </ul>
@@ -181,10 +181,8 @@
         </p>
 
         <div class="media-row">
-            <img src="yanshee.jpg" alt="6D Pose Estimation">
-            
             <video controls>
-                <source src="yanshee-pushups.mp4" type="video/mp4">
+                <source src="yanshee.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -196,6 +194,33 @@
             <li>Controlled Yanshee robot actions including walking, dancing, and gestures via APIs.</li>
             <li>Enabled hands-free human–robot interaction without manual control interfaces.</li>
             <li>Created an interactive robotic platform suitable for demonstrations and engagement scenarios.</li>
+        </ul>
+    </div>
+
+    <!-- Project 4 (ADDED) -->
+    <div class="project">
+        <h2>Augmented Reality Model-Target Android Application</h2>
+
+        <h3 class="subheading">Challenge</h3>
+        <p>
+            Develop a mobile AR application capable of recognizing physical objects 
+            using model targets and dynamically displaying contextual information 
+            to the end user in real time.
+        </p>
+
+        <div class="media-row">
+            <video controls>
+                <source src="AR.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h3 class="subheading">Technologies & Impact</h3>
+        <ul>
+            <li>Developed Android application using Unity Engine for AR-based interaction.</li>
+            <li>Integrated Vuforia Engine with Model Target recognition for object tracking.</li>
+            <li>Implemented real-time overlay of contextual text on detected physical models.</li>
+            <li>Enabled interactive visualization without QR codes or traditional markers.</li>
+            <li>Created an intuitive AR experience enhancing user engagement and information accessibility.</li>
         </ul>
     </div>
 

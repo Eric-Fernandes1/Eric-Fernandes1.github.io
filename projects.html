@@ -69,16 +69,17 @@
 
     .media-row {
         display: flex;
-        justify-content: center;   /* centers horizontally */
+        justify-content: center;
         align-items: center;
         gap: 40px;
         margin: 30px 0;
+        flex-wrap: wrap;
     }
 
     .media-row img,
     .media-row video {
-        width: 500px;      /* Set exact same width */
-        height: 300px;     /* Same height */
+        width: 500px;
+        height: 300px;
         object-fit: cover;
         border-radius: 12px;
     }
@@ -112,20 +113,19 @@
 
 <section>
 
-    <!-- 6D Pose Estimation Project -->
+    <!-- Project 1 -->
     <div class="project">
         <h2>6D Pose Estimation System</h2>
 
         <h3 class="subheading">Challenge</h3>
         <p>
-            Enable real-time 6D object pose estimation for variable orientations and 
-            integrate it with an ABB manipulator for adaptive pick-and-place 
+            Enable real-time 6D object pose estimation for variable orientations 
+            and integrate it with an ABB manipulator for adaptive pick-and-place 
             without fixed waypoint programming.
         </p>
 
         <div class="media-row">
             <img src="Aruco Marker Detection .jpg" alt="6D Pose Estimation">
-            
             <video controls>
                 <source src="Vision_Video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -136,17 +136,14 @@
         <ul>
             <li>Utilized Intel RealSense RGB-D camera for synchronized real-time 3D perception.</li>
             <li>Implemented YOLO detection with custom PnP solver for accurate 6D pose estimation.</li>
-            <li>Performed hand–eye calibration to transform camera coordinates into robot base frame</li>
+            <li>Performed hand–eye calibration to transform camera coordinates into robot base frame.</li>
             <li>Developed Python trajectory generation with ABB RAPID socket-based robot communication.</li>
             <li>Achieved sub-centimeter pose estimation accuracy across repeated operational cycles.</li>
-            <li>Eliminated manual robot re-teaching across multiple production cycles</li>
+            <li>Eliminated manual robot re-teaching across multiple production cycles.</li>
         </ul>
-
-        
     </div>
 
-
-    <!-- ABB OPC UA Project -->
+    <!-- Project 2 -->
     <div class="project">
         <h2>Intelligent Vision-Guided Sorting Using Dobot MG400</h2>
 
@@ -157,8 +154,6 @@
         </p>
 
         <div class="media-row">
-           
-            
             <video controls>
                 <source src="dobot-port (1).mp4" type="video/mp4">
             </video>
@@ -166,15 +161,40 @@
 
         <h3 class="subheading">Technologies & Impact</h3>
         <ul>
-            <li>Utilized computer vision for object detection and classification across multiple attributes</li>
+            <li>Utilized computer vision for object detection and classification across multiple attributes.</li>
             <li>Integrated Dobot MG400 robot using Modbus communication for real-time control.</li>
             <li>Developed control logic supporting operation via Python, Lua, or MATLAB environments.</li>
-            <li>Implemented multi-criteria sorting for metal, non-metal, color, and geometric shape categories</li>
+            <li>Implemented multi-criteria sorting for metal, non-metal, color, and geometric shape categories.</li>
             <li>Reduced manual sorting effort and improved repeatability across continuous cycles.</li>
             <li>Created a modular sorting cell adaptable to different industrial classification tasks.</li>
         </ul>
+    </div>
 
-        
+    <!-- Project 3 -->
+    <div class="project">
+        <h2>Multi-Modal Human–Robot Interaction Platform</h2>
+
+        <h3 class="subheading">Challenge</h3>
+        <p>
+            Enable a humanoid robot to understand spoken commands and perform 
+            interactive behaviors through natural language communication.
+        </p>
+
+        <div class="media-row">
+            <video controls>
+                <source src="yanshee.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h3 class="subheading">Technologies & Impact</h3>
+        <ul>
+            <li>Integrated custom Raspberry Pi computing unit for onboard processing.</li>
+            <li>Implemented speech recognition and NLP for voice command understanding.</li>
+            <li>Developed text-to-speech responses for real-time conversational interaction.</li>
+            <li>Controlled Yanshee robot actions including walking, dancing, and gestures via APIs.</li>
+            <li>Enabled hands-free human–robot interaction without manual control interfaces.</li>
+            <li>Created an interactive robotic platform suitable for demonstrations and engagement scenarios.</li>
+        </ul>
     </div>
 
 </section>

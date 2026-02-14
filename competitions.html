@@ -111,28 +111,27 @@
     }
 
     .media-grid {
-        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;   /* keeps everything centered */
     }
 
     .top-row {
         display: flex;
         gap: 20px;
-        margin-bottom: 20px;
+        justify-content: center;
     }
 
     .top-row img {
-         flex: 1;
-         aspect-ratio: 1 / 1;
-         object-fit: cover;
-         border-radius: 12px;
-    }
-
-    .bottom-row {
-         margin-top: 10px;
+        width: 300px;          /* fixed square size */
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
     .bottom-row img {
-        width: 100%;
+        width: 620px;          /* equal to 2 squares + 20px gap */
         height: 280px;
         object-fit: cover;
         border-radius: 12px;

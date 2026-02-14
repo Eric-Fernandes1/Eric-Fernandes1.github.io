@@ -102,11 +102,35 @@
     }
 
     .team {
-    color: #94a3b8;
-    font-size: 0.95rem;
-    margin-top: -6px;
-    margin-bottom: 18px;
-    letter-spacing: 0.5px;
+        color: #94a3b8;
+        font-size: 0.95rem;
+        margin-top: -6px;
+        margin-bottom: 18px;
+        letter-spacing: 0.5px;
+    }
+
+    .media-grid {
+        margin-top: 25px;
+    }
+
+    .top-row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .top-row img {
+        width: 50%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .bottom-row img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 </style>
 </head>
@@ -119,11 +143,9 @@
 </header>
 
 <section>
-
     <div class="competition">
         <h2>RoboCup ARM Challenge 2023 - Bordeaux, France</h2>
         <div class="location">Dragons 77</div>
-        
 
         <h3 class="subheading">Challenge</h3>
         <p>
@@ -131,9 +153,18 @@
             difficulty required vision-guided classification of objects by color 
             and shape, followed by accurate placement into corresponding bins.
         </p>
-         
-        
-      
+
+        <div class="media-grid">
+            <div class="top-row">
+                <img src="GroupPhoto.jpg" alt="Robot Grasping">
+                <img src="robot-setup.jpg" alt="Object Sorting">
+            </div>
+
+            <div class="bottom-row">
+                <img src="Screenshot(682).jpg" alt="Full Arena Setup">
+            </div>
+        </div>
+
         <h3 class="subheading">Technologies</h3>
         <ul>
             <li>Engineered multi-stage perception pipeline using YOLOv4 detection.</li>
@@ -151,7 +182,6 @@
             Improved pose estimation accuracy by 40% with 85% grasp success rate.
         </div>
     </div>
-
 </section>
 
 <footer>

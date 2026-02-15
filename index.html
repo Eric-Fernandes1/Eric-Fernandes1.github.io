@@ -60,11 +60,25 @@
         padding-bottom: 5px;
     }
 
+    /* -------- FIXED GRID HERE -------- */
     .card-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 25px;
     }
+
+    @media (max-width: 900px) {
+        .card-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .card-container {
+            grid-template-columns: 1fr;
+        }
+    }
+    /* --------------------------------- */
 
     .card {
         background: #1e293b;
@@ -171,6 +185,15 @@
             <a href="projects.html#yanshee" class="btn">View Project</a>
         </div>
 
+        <div class="card">
+            <h3>Multi-Modal Human–Robot Interaction Platform</h3>
+            <p>
+                Enable a humanoid robot to understand spoken commands and perform
+                interactive behaviors through natural language communication.
+            </p>
+            <a href="projects.html#yanshee" class="btn">View Project</a>
+        </div>
+       
     </div>
 </section>
 
@@ -190,11 +213,11 @@
         </div>
 
         <div class="card">
-            <h3>RGMC, ICRA 2025 - Atlanta, USA</h3>
+            <h3>Augmented Reality Model-Target Android Application</h3>
             <p>
-                Design and implement a fully autonomous robotic manipulation system
-                capable of accurately detecting, localizing, and grasping YCB objects
-                in a competitive environment..
+                Develop a mobile AR application capable of recognizing physical objects
+                using model targets and dynamically displaying contextual information 
+                to the end user in real time.
             </p>
             <a href="competitions.html#icra" class="btn">View Project</a>
         </div>

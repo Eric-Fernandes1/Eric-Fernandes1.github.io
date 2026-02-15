@@ -184,6 +184,54 @@
         color: #cbd5e1;
         line-height: 1.5;
     }
+
+    /* ===== Research + Recognition Layout ===== */
+
+    .dual-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    @media (max-width: 900px) {
+        .dual-section {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .recognition-card {
+        background: #1e293b;
+        border-radius: 14px;
+        overflow: hidden;
+        transition: 0.3s ease;
+        text-align: center;
+    }
+
+    .recognition-card:hover {
+        transform: translateY(-5px);
+        background: #243447;
+    }
+
+    .recognition-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .recognition-content {
+        padding: 18px;
+    }
+
+    .recognition-content a {
+        color: #38bdf8;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .recognition-content a:hover {
+        text-decoration: underline;
+    }
 </style>
 </head>
 
@@ -213,127 +261,84 @@
 
 <section id="projects">
     <h2>Projects</h2>
-
     <div class="card-container">
-
         <div class="card">
             <h3>6D Pose Estimation System</h3>
-            <p>
-                Enable real-time 6D object pose estimation for variable orientations
-                and integrate it with an ABB manipulator for adaptive pick-and-place
-                without fixed waypoint programming.
-            </p>
+            <p>Enable real-time 6D object pose estimation...</p>
             <a href="projects.html" class="btn">View Projects</a>
         </div>
-
-        <div class="card">
-            <h3>Intelligent Vision-Guided Sorting Using Dobot MG400</h3>
-            <p>
-                Enable automated classification and sorting of objects based on
-                material type and shape using a robotic manipulator instead of
-                manual sorting.
-            </p>
-            <a href="projects.html#dobot" class="btn">View Project</a>
-        </div>
-
-        <div class="card">
-            <h3>Multi-Modal Human–Robot Interaction Platform</h3>
-            <p>
-                Enable a humanoid robot to understand spoken commands and perform
-                interactive behaviors through natural language communication.
-            </p>
-            <a href="projects.html#yanshee" class="btn">View Project</a>
-        </div>
-
-        <div class="card">
-            <h3>Augmented Reality Model-Target Android Application</h3>
-            <p>
-                Develop a mobile AR application capable of recognizing physical
-                objects using model targets and dynamically displaying contextual
-                information to the end user in real time.
-            </p>
-            <a href="projects.html#AR" class="btn">View Project</a>
-        </div>
-        
     </div>
 </section>
 
 <section id="competitions">
     <h2>Competitions</h2>
-
     <div class="card-container">
-
         <div class="card">
             <h3>Robocup ARM 2023</h3>
-            <p>
-                Complete a four-level autonomous manipulation task where increasing
-                difficulty required vision-guided classification of objects by color
-                and shape, followed by accurate placement into corresponding bins.
-            </p>
+            <p>Autonomous manipulation task with classification and placement.</p>
             <a href="competitions.html#robocup" class="btn">View Project</a>
         </div>
-
-        <div class="card">
-            <h3>RGMC, ICRA 2025 - Atlanta, USA</h3>
-            <p>
-                Design and implement a fully autonomous robotic manipulation system
-                capable of accurately detecting, localizing, and grasping YCB objects
-                in a competitive environment.
-            </p>
-            <a href="competitions.html#icra" class="btn">View Project</a>
-        </div>
-
     </div>
 </section>
 
 <section id="research">
-    <h2>Research Papers</h2>
 
-    <div class="card-container">
+    <div class="dual-section">
 
-        <div class="paper-card">
+        <!-- LEFT -->
+        <div>
+            <h2>Research Papers</h2>
 
-            <div class="paper-image">
-                <img src="images/jamming_gripper.png" alt="Granular Jamming Gripper Paper">
+            <div class="paper-card">
+                <div class="paper-image">
+                    <img src="images/jamming_gripper.png">
+                </div>
+
+                <div class="paper-content">
+                    <div class="paper-title">
+                        Active Vibration Fluidization for Granular Jamming Grippers
+                    </div>
+
+                    <div class="paper-authors">
+                        Cameron Coombe; James Brett; Raghav Mishra; Gary W. Delaney; David Howard
+                    </div>
+
+                    <div class="paper-conf">
+                        IEEE International Conference on Soft Robotics (RoboSoft), 2023
+                    </div>
+
+                    <div class="paper-desc">
+                        We augment a universal gripper with a computer-controlled audio exciter
+                        to improve holding strength and explore vibration effects.
+                    </div>
+
+                    <a href="#" class="btn">Read Paper</a>
+                </div>
             </div>
+        </div>
 
-            <div class="paper-content">
+        <!-- RIGHT -->
+        <div>
+            <h2>Recognition</h2>
 
-                <div class="paper-title">
-                    Vision Based Automation system for Onion
-                    Grading Using Robotic Arm
+            <div class="recognition-card">
+                <img src="images/recognition.png">
+
+                <div class="recognition-content">
+                    <a href="https://example.com" target="_blank">
+                        Featured in International Robotics Competition Highlights
+                    </a>
                 </div>
-
-                <div class="paper-authors">
-                    Rahul Suryawanshi, Jayesh Jagtap, Dnyaneshwari Shegokar, Siddhesh Jaju, Chandan M.N,
-                    Avinash M. Badadhe, Pranav Lad, Eric Fernandes
-                </div>
-
-                <div class="paper-conf">
-                    IEEE 4th International Conference for Advancement in Technology (ICONAT), 2025
-                </div>
-
-                <div class="paper-desc">
-                     This paper presents the system development
-                     methodology, including hardware integration, algorithm devel
-                     opment and implementation. The experiments conducted on the
-                     system demonstrate the ability to detect and segregate onions
-                     effectively
-                </div>
-
-                <a href="#" class="btn">Read Paper</a>
-
             </div>
         </div>
 
     </div>
+
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: your@email.com</p>
-    <p>GitHub: https://github.com/yourusername</p>
-    <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
 </section>
 
 <footer>

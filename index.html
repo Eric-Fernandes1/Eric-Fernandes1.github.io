@@ -1,241 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eric Fernandes | Robotics Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Fernandes | Robotics Engineer</title>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-body{background-color:#0f172a;color:#e2e8f0;line-height:1.6;}
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
 
-header{text-align:center;padding:60px 20px;background:linear-gradient(135deg,#1e293b,#0f172a);}
-header h1{font-size:40px;margin-bottom:10px;}
-header p{font-size:18px;color:#94a3b8;}
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
 
-nav{margin-top:20px;}
-nav a{color:#38bdf8;text-decoration:none;margin:0 15px;font-weight:bold;}
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
 
-section{padding:60px 20px;max-width:1000px;margin:auto;}
+        header p {
+            font-size: 18px;
+            color: #94a3b8;
+        }
 
-h2{font-size:28px;margin-bottom:30px;border-bottom:2px solid #38bdf8;display:inline-block;padding-bottom:5px;}
+        nav {
+            margin-top: 20px;
+        }
 
-.card-container{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;}
+        nav a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
-@media (max-width:900px){.card-container{grid-template-columns:repeat(2,1fr);}}
-@media (max-width:600px){.card-container{grid-template-columns:1fr;}}
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
 
-.card{background:#1e293b;padding:25px;border-radius:10px;transition:.3s ease;}
-.card:hover{transform:translateY(-5px);background:#243447;}
-.card h3{margin-bottom:10px;color:#38bdf8;}
-.card p{font-size:14px;color:#cbd5e1;}
+        h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #38bdf8;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
 
-footer{text-align:center;padding:30px;background-color:#1e293b;margin-top:40px;color:#94a3b8;}
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
 
-.btn{display:inline-block;margin-top:15px;padding:8px 15px;background-color:#38bdf8;color:#0f172a;text-decoration:none;border-radius:5px;font-weight:bold;font-size:14px;}
-.btn:hover{background-color:#0ea5e9;}
+        @media (max-width: 900px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-/* ===== Research Paper Card ===== */
+        @media (max-width: 600px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
 
-.paper-card{background:#1e293b;border-radius:14px;overflow:hidden;transition:.3s ease;display:flex;flex-direction:column;}
-.paper-card:hover{transform:translateY(-5px);background:#243447;}
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
 
-.paper-image{width:100%;height:150px;background:#0b1220;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.paper-image img{width:100%;height:100%;object-fit:cover;}
+        .card:hover {
+            transform: translateY(-5px);
+            background: #243447;
+        }
 
-.paper-content{padding:18px;}
-.paper-title{font-size:17px;color:#60a5fa;font-weight:bold;margin-bottom:10px;}
-.paper-authors{font-size:13px;color:#cbd5e1;margin-bottom:6px;}
-.paper-conf{font-size:13px;color:#94a3b8;margin-bottom:12px;}
-.paper-desc{font-size:13.5px;color:#cbd5e1;line-height:1.5;}
+        .card h3 {
+            margin-bottom: 10px;
+            color: #38bdf8;
+        }
 
-/* ===== Research + Recognition Layout ===== */
+        .card p {
+            font-size: 14px;
+            color: #cbd5e1;
+        }
 
-.dual-section{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:start;}
-@media (max-width:900px){.dual-section{grid-template-columns:1fr;}}
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #1e293b;
+            margin-top: 40px;
+            color: #94a3b8;
+        }
 
-.recognition-card{background:#1e293b;border-radius:14px;overflow:hidden;transition:.3s ease;text-align:center;padding-bottom:10px;}
-.recognition-card:hover{transform:translateY(-5px);background:#243447;}
-.recognition-card img{width:100%;height:240px;object-fit:cover;}
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
 
-.recognition-content{padding:18px;}
-.recognition-content a{color:#38bdf8;font-weight:bold;text-decoration:none;}
-.recognition-content a:hover{text-decoration:underline;}
+        .btn:hover {
+            background-color: #0ea5e9;
+        }
 
-</style>
+        /* Research Paper Card */
+
+        .paper-card {
+            background: #1e293b;
+            border-radius: 14px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            background: #243447;
+        }
+
+        .paper-image {
+            width: 100%;
+            height: 150px;
+            background: #0b1220;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .paper-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .paper-content {
+            padding: 18px;
+        }
+
+        .paper-title {
+            font-size: 17px;
+            color: #60a5fa;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .paper-authors {
+            font-size: 13px;
+            color: #cbd5e1;
+            margin-bottom: 6px;
+        }
+
+        .paper-conf {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-bottom: 12px;
+        }
+
+        .paper-desc {
+            font-size: 13.5px;
+            color: #cbd5e1;
+            line-height: 1.5;
+        }
+
+        /* Research + Recognition Layout */
+
+        .dual-section {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        @media (max-width: 900px) {
+            .dual-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .recognition-card {
+            background: #1e293b;
+            border-radius: 14px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .recognition-card:hover {
+            transform: translateY(-5px);
+            background: #243447;
+        }
+
+        .recognition-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .recognition-content {
+            padding: 18px;
+        }
+
+        .recognition-content a {
+            color: #38bdf8;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .recognition-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-<h1>Eric Fernandes</h1>
-<p>Robotics | Computer Vision | Industrial Automation</p>
+    <header>
+        <h1>Eric Fernandes</h1>
+        <p>Robotics | Computer Vision | Industrial Automation</p>
 
-<nav>
-<a href="#about">About</a>
-<a href="projects.html">Projects</a>
-<a href="competitions.html">Competitions</a>
-<a href="#research">Research</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="competitions.html">Competitions</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<section id="about">
-<h2>About Me</h2>
-<p>
-I am a Robotics and AI enthusiast focused on 6D pose estimation, robot manipulation,
-and industrial automation systems. I enjoy building perception-driven robotic systems
-using ROS2, OpenCV, and deep learning.
-</p>
-</section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Robotics and AI enthusiast focused on 6D pose estimation,
+            robot manipulation, and industrial automation systems.
+            I enjoy building perception-driven robotic systems using ROS2,
+            OpenCV, and deep learning.
+        </p>
+    </section>
 
-<section id="projects">
-<h2>Projects</h2>
+    <section id="projects">
+        <h2>Projects</h2>
 
-<div class="card-container">
+        <div class="card-container">
 
-<div class="card">
-<h3>6D Pose Estimation System</h3>
-<p>
-Enable real-time 6D object pose estimation for variable orientations
-and integrate it with an ABB manipulator for adaptive pick-and-place
-without fixed waypoint programming.
-</p>
-<a href="projects.html" class="btn">View Projects</a>
-</div>
+            <div class="card">
+                <h3>6D Pose Estimation System</h3>
+                <p>
+                    Enable real-time 6D object pose estimation for variable orientations
+                    and integrate it with an ABB manipulator for adaptive pick-and-place
+                    without fixed waypoint programming.
+                </p>
+                <a href="projects.html" class="btn">View Projects</a>
+            </div>
 
-<div class="card">
-<h3>Intelligent Vision-Guided Sorting Using Dobot MG400</h3>
-<p>
-Enable automated classification and sorting of objects based on
-material type and shape using a robotic manipulator instead of
-manual sorting.
-</p>
-<a href="projects.html#dobot" class="btn">View Project</a>
-</div>
+            <div class="card">
+                <h3>Intelligent Vision-Guided Sorting Using Dobot MG400</h3>
+                <p>
+                    Enable automated classification and sorting of objects based on
+                    material type and shape using a robotic manipulator instead of
+                    manual sorting.
+                </p>
+                <a href="projects.html#dobot" class="btn">View Project</a>
+            </div>
 
-<div class="card">
-<h3>Multi-Modal Human–Robot Interaction Platform</h3>
-<p>
-Enable a humanoid robot to understand spoken commands and perform
-interactive behaviors through natural language communication.
-</p>
-<a href="projects.html#yanshee" class="btn">View Project</a>
-</div>
+            <div class="card">
+                <h3>Multi-Modal Human–Robot Interaction Platform</h3>
+                <p>
+                    Enable a humanoid robot to understand spoken commands and perform
+                    interactive behaviors through natural language communication.
+                </p>
+                <a href="projects.html#yanshee" class="btn">View Project</a>
+            </div>
 
-<div class="card">
-<h3>Augmented Reality Model-Target Android Application</h3>
-<p>
-Develop a mobile AR application capable of recognizing physical
-objects using model targets and dynamically displaying contextual
-information to the end user in real time.
-</p>
-<a href="projects.html#AR" class="btn">View Project</a>
-</div>
+            <div class="card">
+                <h3>Augmented Reality Model-Target Android Application</h3>
+                <p>
+                    Develop a mobile AR application capable of recognizing physical
+                    objects using model targets and dynamically displaying contextual
+                    information in real time.
+                </p>
+                <a href="projects.html#AR" class="btn">View Project</a>
+            </div>
 
-</div>
-</section>
+        </div>
+    </section>
 
-<section id="competitions">
-<h2>Competitions</h2>
+    <section id="competitions">
+        <h2>Competitions</h2>
 
-<div class="card-container">
+        <div class="card-container">
 
-<div class="card">
-<h3>Robocup ARM 2023</h3>
-<p>
-Complete a four-level autonomous manipulation task where increasing
-difficulty required vision-guided classification of objects by color
-and shape, followed by accurate placement into corresponding bins.
-</p>
-<a href="competitions.html#robocup" class="btn">View Project</a>
-</div>
+            <div class="card">
+                <h3>Robocup ARM 2023</h3>
+                <p>
+                    Four-level autonomous manipulation task requiring vision-guided
+                    classification and accurate bin placement.
+                </p>
+                <a href="competitions.html#robocup" class="btn">View Project</a>
+            </div>
 
-<div class="card">
-<h3>RGMC, ICRA 2025 - Atlanta, USA</h3>
-<p>
-Design and implement a fully autonomous robotic manipulation system
-capable of accurately detecting, localizing, and grasping YCB objects
-in a competitive environment.
-</p>
-<a href="competitions.html#icra" class="btn">View Project</a>
-</div>
+            <div class="card">
+                <h3>RGMC, ICRA 2025 - Atlanta, USA</h3>
+                <p>
+                    Fully autonomous robotic manipulation system capable of detecting,
+                    localizing, and grasping YCB objects in a competitive setting.
+                </p>
+                <a href="competitions.html#icra" class="btn">View Project</a>
+            </div>
 
-</div>
-</section>
+        </div>
+    </section>
 
-<section id="research">
+    <section id="research">
 
-<div class="dual-section">
+        <div class="dual-section">
 
-<!-- LEFT: PAPER -->
-<div>
-<h2>Research Papers</h2>
+            <div>
+                <h2>Research Papers</h2>
 
-<div class="paper-card">
-<div class="paper-image">
-<img src="images/jamming_gripper.png">
-</div>
+                <div class="paper-card">
+                    <div class="paper-image">
+                        <img src="images/jamming_gripper.png" alt="Research Paper">
+                    </div>
 
-<div class="paper-content">
+                    <div class="paper-content">
+                        <div class="paper-title">
+                            <a href="https://ieeexplore.ieee.org/document/11362888" target="_blank">
+                                Vision Based Automation System for Onion Grading Using Robotic Arm
+                            </a>
+                        </div>
 
-<div class="paper-title">
-<a href="https://ieeexplore.ieee.org/document/11362888" target="_blank">
-Vision Based Automation system for Onion Grading Using Robotic Arm
-</a>
-</div>
+                        <div class="paper-authors">
+                            Rahul Suryawanshi, Jayesh Jagtap, Dnyaneshwari Shegokar,
+                            Siddhesh Jaju, Chandan M.N, Avinash M. Badadhe,
+                            Pranav Lad, Eric Fernandes
+                        </div>
 
-<div class="paper-authors">
-Rahul Suryawanshi, Jayesh Jagtap, Dnyaneshwari Shegokar, Siddhesh Jaju,
-Chandan M.N, Avinash M. Badadhe, Pranav Lad, Eric Fernandes
-</div>
+                        <div class="paper-conf">
+                            IEEE ICONAT 2025
+                        </div>
 
-<div class="paper-conf">
-IEEE 4th International Conference for Advancement in Technology (ICONAT), 2025
-</div>
+                        <div class="paper-desc">
+                            This paper presents the system development methodology
+                            including hardware integration, algorithm development,
+                            and implementation. Experiments demonstrate effective
+                            onion detection and segregation.
+                        </div>
 
-<div class="paper-desc">
-This paper presents the system development methodology including hardware integration,
-algorithm development and implementation. Experiments demonstrate onion detection
-and segregation performance.
-</div>
+                        <a href="https://ieeexplore.ieee.org/document/11362888"
+                           target="_blank"
+                           class="btn">Read Paper</a>
+                    </div>
+                </div>
+            </div>
 
-<a href="https://ieeexplore.ieee.org/document/11362888" target="_blank" class="btn">Read Paper</a>
+            <div>
+                <h2>Recognition</h2>
 
-</div>
-</div>
-</div>
+                <div class="recognition-card">
+                    <img src="27877.jpg" alt="Recognition">
 
-<!-- RIGHT: RECOGNITION -->
-<div>
-<h2>Recognition</h2>
+                    <div class="recognition-content">
+                        <a href="https://drive.google.com/file/d/1zwBBnh4or6WgU59bJGOyRgxBvo2Vfgz7/view?usp=sharing"
+                           target="_blank">
+                            Competition achievements featured in local newspaper coverage.
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<div class="recognition-card">
-<img src="27877.jpg">
+        </div>
 
-<div class="recognition-content">
-<a href="https://drive.google.com/file/d/1zwBBnh4or6WgU59bJGOyRgxBvo2Vfgz7/view?usp=sharing" target="_blank">
-Competition achievements featured in local newspaper coverage.
-</a>
-</div>
-</div>
+    </section>
 
-</div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+        <p>GitHub: https://github.com/yourusername</p>
+        <p>LinkedIn: https://linkedin.com/in/yourprofile</p>
+    </section>
 
-</div>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
-<p>GitHub: https://github.com/yourusername</p>
-<p>LinkedIn: https://linkedin.com/in/yourprofile</p>
-</section>
-
-<footer>
-© 2026 Eric Fernandes | Built with GitHub Pages
-</footer>
+    <footer>
+        © 2026 Eric Fernandes | Built with GitHub Pages
+    </footer>
 
 </body>
 </html>

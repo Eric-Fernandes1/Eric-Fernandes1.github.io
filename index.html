@@ -60,7 +60,6 @@
         padding-bottom: 5px;
     }
 
-    /* -------- FIXED GRID HERE -------- */
     .card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -78,7 +77,6 @@
             grid-template-columns: 1fr;
         }
     }
-    /* --------------------------------- */
 
     .card {
         background: #1e293b;
@@ -125,6 +123,67 @@
     .btn:hover {
         background-color: #0ea5e9;
     }
+
+    /* -------- Research Paper Card -------- */
+
+    .paper-card {
+        background: #1e293b;
+        border-radius: 14px;
+        overflow: hidden;
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paper-card:hover {
+        transform: translateY(-5px);
+        background: #243447;
+    }
+
+    .paper-image {
+        width: 100%;
+        height: 180px;
+        background: #0b1220;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .paper-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .paper-content {
+        padding: 18px;
+    }
+
+    .paper-title {
+        font-size: 18px;
+        color: #60a5fa;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .paper-authors {
+        font-size: 13px;
+        color: #cbd5e1;
+        margin-bottom: 6px;
+    }
+
+    .paper-conf {
+        font-size: 13px;
+        color: #94a3b8;
+        margin-bottom: 12px;
+    }
+
+    .paper-desc {
+        font-size: 14px;
+        color: #cbd5e1;
+        line-height: 1.5;
+    }
 </style>
 </head>
 
@@ -138,6 +197,7 @@
         <a href="#about">About</a>
         <a href="projects.html">Projects</a>
         <a href="competitions.html">Competitions</a>
+        <a href="#research">Research</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -221,6 +281,45 @@
                 in a competitive environment.
             </p>
             <a href="competitions.html#icra" class="btn">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="research">
+    <h2>Research Papers</h2>
+
+    <div class="card-container">
+
+        <div class="paper-card">
+
+            <div class="paper-image">
+                <img src="images/jamming_gripper.png" alt="Granular Jamming Gripper Paper">
+            </div>
+
+            <div class="paper-content">
+
+                <div class="paper-title">
+                    Active Vibration Fluidization for Granular Jamming Grippers
+                </div>
+
+                <div class="paper-authors">
+                    Cameron Coombe; James Brett; Raghav Mishra; Gary W. Delaney; David Howard
+                </div>
+
+                <div class="paper-conf">
+                    IEEE International Conference on Soft Robotics (RoboSoft), 2023
+                </div>
+
+                <div class="paper-desc">
+                    We augment a conventional universal gripper with a computer-controlled
+                    audio exciter to improve holding strength. An automated test rig
+                    enables large-scale data collection to explore the effects of active vibration.
+                </div>
+
+                <a href="#" class="btn">Read Paper</a>
+
+            </div>
         </div>
 
     </div>

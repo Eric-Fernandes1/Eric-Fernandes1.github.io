@@ -1,162 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Competitions | Eric Fernandes</title>
 
 <style>
-    body {
-        background-color: #0f172a;
-        color: #e2e8f0;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-    }
 
-    header {
-        text-align: center;
-        padding: 40px;
-        background: #1e293b;
-    }
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
-    header h1 {
-        margin-bottom: 10px;
-    }
+header {
+    text-align: center;
+    padding: 40px;
+    background: #1e293b;
+}
 
-    .back-btn {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 8px 15px;
-        background-color: #38bdf8;
-        color: #0f172a;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-    }
+header h1 {
+    margin-bottom: 10px;
+}
 
-    .back-btn:hover {
-        background-color: #0ea5e9;
-    }
+.back-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    section {
-        max-width: 1000px;
-        margin: auto;
-        padding: 40px 20px;
-    }
+.back-btn:hover {
+    background-color: #0ea5e9;
+}
 
-    .competition {
-        background: #1e293b;
-        padding: 30px;
-        margin-bottom: 50px;
-        border-radius: 12px;
-    }
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
 
-    .competition h2 {
-        text-align: center;
-        color: #38bdf8;
-        margin-bottom: 5px;
-    }
+.competition {
+    background: #1e293b;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+}
 
-    .location {
-        text-align: center;
-        color: #94a3b8;
-        margin-bottom: 20px;
-        font-size: 16px;
-    }
+.competition h2 {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 5px;
+}
 
-    .subheading {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        text-decoration: underline;
-        color: #38bdf8;
-        font-size: 18px;
-    }
+.location {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
 
-    ul {
-        margin-left: 20px;
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
+.subheading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: #38bdf8;
+    font-size: 18px;
+}
 
-    ul li {
-        margin-bottom: 8px;
-        color: #cbd5e1;
-    }
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
 
-    .highlight {
-        background: #0ea5e9;
-        color: #0f172a;
-        padding: 15px;
-        border-radius: 8px;
-        margin-top: 15px;
-        font-weight: bold;
-    }
+ul li {
+    margin-bottom: 8px;
+    color: #cbd5e1;
+}
 
-    footer {
-        text-align: center;
-        padding: 30px;
-        background-color: #1e293b;
-        color: #94a3b8;
-    }
+.highlight {
+    background: #0ea5e9;
+    color: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
 
-    .team {
-        color: #94a3b8;
-        font-size: 0.95rem;
-        margin-top: -6px;
-        margin-bottom: 18px;
-        letter-spacing: 0.5px;
-    }
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #1e293b;
+    color: #94a3b8;
+}
 
-    .media-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
+.team {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-top: -6px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
 
-    .top-row {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-    }
+.media-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
 
-    .top-row img {
-        width: 400px;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 12px;
-    }
+.top-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
 
-    .bottom-row img {
-        width: 850px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 12px;
-    }
-    
-    .project2 .top-row img {
-        width: 400px;     /* Change as you like */
-        height: 300px;    /* Change as you like */
-        
-        
-    }
-    .img-frame {
-        width: auto;
-        height: auto;
-        
-        border-radius: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
+.top-row img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
 
-    .img-frame img {
-        max-width: 140%;
-        max-height: 110%;
-        object-fit: contain;
+.bottom-row img {
+    width: 850px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.project2 .top-row img {
+    width: 400px;
+    height: 300px;
+}
+
+.img-frame {
+    width: auto;
+    height: auto;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-frame img {
+    max-width: 140%;
+    max-height: 110%;
+    object-fit: contain;
 }
 
 </style>
@@ -171,86 +171,149 @@
 
 <section>
 
-    <div class="competition" id="robocup">
-        <h2>RoboCup ARM Challenge 2023 - Bordeaux, France</h2>
-        <div class="location">Dragons 77</div>
+<!-- RoboCup ARM -->
 
-        <h3 class="subheading">Challenge</h3>
-        <p>
-            Complete a four-level autonomous manipulation task where increasing
-            difficulty required vision-guided classification of objects by color
-            and shape, followed by accurate placement into corresponding bins.
-        </p>
+<div class="competition" id="robocup">
 
-        <div class="media-grid">
-            <div class="top-row">
-                <img src="group-photo.jpeg" alt="Robot Grasping">
-                <img src="robot-setup.jpeg" alt="Object Sorting">
-            </div>
+    <h2>RoboCup ARM Challenge 2023 - Bordeaux, France</h2>
+    <div class="location">Dragons 77</div>
 
-            <div class="bottom-row">
-                <img src="Screenshot (682).png" alt="Full Arena Setup">
-            </div>
+    <h3 class="subheading">Challenge</h3>
+    <p>
+        Complete a four-level autonomous manipulation task where increasing
+        difficulty required vision-guided classification of objects by color
+        and shape, followed by accurate placement into corresponding bins.
+    </p>
+
+    <div class="media-grid">
+
+        <div class="top-row">
+            <img src="group-photo.jpeg" alt="Robot Grasping">
+            <img src="robot-setup.jpeg" alt="Object Sorting">
         </div>
 
-        <h3 class="subheading">Technologies</h3>
-        <ul>
-            <li>Engineered multi-stage perception pipeline using YOLOv4 detection.</li>
-            <li>Applied RANSAC-ICP registration with voxel downsampling and statistical filtering.</li>
-            <li>Estimated surface normals and curvature via least-squares neighborhood modeling.</li>
-            <li>Selected antipodal grasp pairs aligned with gripper direction for stable manipulation.</li>
-            <li>Built hierarchical state-machine planner integrating grasping, motion planning, and force control.</li>
-            <li>Implemented recovery behaviors achieving 85% task success rate.</li>
-        </ul>
-
-        <h3 class="subheading">Outcome</h3>
-        <div class="highlight">
-            🏆 5th Place Worldwide<br>
-            🌏 3rd in Asia among 20+ International Teams<br><br>
-            Improved pose estimation accuracy by 40% with 85% grasp success rate.
+        <div class="bottom-row">
+            <img src="Screenshot (682).png" alt="Full Arena Setup">
         </div>
+
     </div>
 
-    <div class="competition project2" id="icra">
-        <h2>RGMC, ICRA 2025 - Atlanta, USA</h2>
-        <div class="location">Team Bytebots</div>
+    <h3 class="subheading">Technologies</h3>
 
-        <h3 class="subheading">Challenge</h3>
-        <p>
-            Design and implement a fully autonomous robotic manipulation system capable
-            of accurately detecting, localizing, and grasping YCB objects in a competitive environment.
-        </p>
+    <ul>
+        <li>Engineered multi-stage perception pipeline using YOLOv4 detection.</li>
+        <li>Applied RANSAC-ICP registration with voxel downsampling and statistical filtering.</li>
+        <li>Estimated surface normals and curvature via least-squares neighborhood modeling.</li>
+        <li>Selected antipodal grasp pairs aligned with gripper direction for stable manipulation.</li>
+        <li>Built hierarchical state-machine planner integrating grasping, motion planning, and force control.</li>
+        <li>Implemented recovery behaviors achieving 85% task success rate.</li>
+    </ul>
 
-        <div class="media-grid">
-            <div class="top-row">
-               <div class="img-frame">
-                    <img src="icra-robot.jpg">
-               </div>
+    <h3 class="subheading">Outcome</h3>
 
-               <div class="img-frame">
-                    <img src="icra-ranking.jpg">
-               </div>
+    <div class="highlight">
+        🏆 5th Place Worldwide<br>
+        🌏 3rd in Asia among 20+ International Teams<br><br>
+        Improved pose estimation accuracy by 40% with 85% grasp success rate.
+    </div>
+
+</div>
+
+<!-- ICRA -->
+
+<div class="competition project2" id="icra">
+
+    <h2>RGMC, ICRA 2025 - Atlanta, USA</h2>
+    <div class="location">Team Bytebots</div>
+
+    <h3 class="subheading">Challenge</h3>
+    <p>
+        Design and implement a fully autonomous robotic manipulation system capable
+        of accurately detecting, localizing, and grasping YCB objects in a competitive environment.
+    </p>
+
+    <div class="media-grid">
+
+        <div class="top-row">
+
+            <div class="img-frame">
+                <img src="icra-robot.jpg">
             </div>
 
-            
+            <div class="img-frame">
+                <img src="icra-ranking.jpg">
+            </div>
+
         </div>
 
-        <h3 class="subheading">Technologies</h3>
-        <ul>
-            <li>Developed a YOLO-based object detection pipeline integrated with ICP pose refinement for accurate 6D pose estimation.</li>
-            <li>Designed a collision-free motion planner using CHOMP with TOPP-RA for time-optimal trajectory parameterization.</li>
-            <li>Implemented quintic polynomial trajectory interpolation to ensure smooth and stable robotic motion execution.</li>
-            <li>Implemented the system in MATLAB & Simulink (Unity-based simulation)</li>
-        </ul>
-
-        <h3 class="subheading">Outcome</h3>
-        <div class="highlight">
-            🏆 4th Place Worldwide<br><br>
-            
-            Developed a robust end-to-end perception-to-manipulation pipeline demonstrating
-            high accuracy, smooth motion control, and efficient grasp execution.
-        </div>
     </div>
+
+    <h3 class="subheading">Technologies</h3>
+
+    <ul>
+        <li>Developed a YOLO-based object detection pipeline integrated with ICP pose refinement for accurate 6D pose estimation.</li>
+        <li>Designed a collision-free motion planner using CHOMP with TOPP-RA for time-optimal trajectory parameterization.</li>
+        <li>Implemented quintic polynomial trajectory interpolation to ensure smooth and stable robotic motion execution.</li>
+        <li>Implemented the system in MATLAB & Simulink (Unity-based simulation)</li>
+    </ul>
+
+    <h3 class="subheading">Outcome</h3>
+
+    <div class="highlight">
+        🏆 4th Place Worldwide<br><br>
+        Developed a robust end-to-end perception-to-manipulation pipeline demonstrating
+        high accuracy, smooth motion control, and efficient grasp execution.
+    </div>
+
+</div>
+
+<!-- Indian Karting -->
+
+<div class="competition" id="robocup-edu">
+
+    <h2>Indian Karting Race 6.0</h2>
+    <div class="location">Team Metal Falcons</div>
+
+    <h3 class="subheading">Challenge</h3>
+
+    <p>
+        Led the Electronics and Controls team in designing and developing a high-performance
+        electric go-kart for India Karting Race (IKR) Season 6.0, focusing on battery system
+        architecture, thermal management, torque vectoring control, and real-time system
+        monitoring while optimizing vehicle packaging, safety, and performance under
+        competitive racing conditions.
+    </p>
+
+    <div class="media-grid">
+
+        <div class="top-row">
+            <img src="robocup-edu-robot.jpg" alt="Robot Demo">
+            <img src="robocup-edu-team.jpg" alt="Team Photo">
+        </div>
+
+        <div class="bottom-row">
+            <img src="robocup-edu-arena.jpg" alt="Competition Arena">
+        </div>
+
+    </div>
+
+    <h3 class="subheading">Technologies</h3>
+
+    <ul>
+        <li>ROS2 (C++) for torque vectoring control and independent wheel speed management.</li>
+        <li>Raspberry Pi 4 for onboard computation and control architecture.</li>
+        <li>MAX31856 Thermocouples for battery thermal monitoring and safety control.</li>
+        <li>I2C Communication & Embedded Electronics for real-time system monitoring via LCD display.</li>
+    </ul>
+
+    <h3 class="subheading">Outcome</h3>
+
+    <div class="highlight">
+        🏆 1st Place – Engineering Design <br>
+        🥉 2nd Runner-up – Innovation (Electric Category)
+    </div>
+
+</div>
 
 </section>
 
